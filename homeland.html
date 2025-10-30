@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+
+        
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9N3N15M3T3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9N3N15M3T3');
+</script>
+
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width-device-width" initial scale="1" shrink to fit="no">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<title> homeland </title>
+    </head>
+    <body>
+<nav class="navbar navbar-expand-xl navbar-dark fixed-top shadow-sm">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Homeland.</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Buy</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Rent</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">blog</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            properties
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Condo</a></li>
+            <li><a class="dropdown-item" href="#">Property Land</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Commercial Building</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" aria-disabled="true">Contact</a>
+        </li>
+      </ul>
+      <!----seacrh form-->
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<style>
+    .carousel-item img{
+object-fit:cover;
+height:100vh;
+display: block;
+image-rendering: crisp-edges;
+image-rendering: -webkit-optimize-contrast;
+    }
+</style>
+<!--hero section-->
+<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.6-4_spOI04Eq06CoMxv7qwHaHa%3Fcb%3D12%26pid%3DApi&f=1&ipt=902d59f8d0afe7d97fc0e0c171ee2e133a30189b411c7024d17d36b86b1d2d03&ipo=images " class="d-block w-100 hero-img" alt="house">
+    <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+      <h1 class="property-title"> 871 CRENSHAW BLVD</h1>
+      <h2 class="fw-bold text-white mb-3">625 S. BERANDO St</h2>
+      <h5 class="property-price">$23,400</h5>
+      <div class="d-flex gap-2 mb-3">
+        <button class="btn btn-success px-4">For Sale</button>
+        <button class="btn btn-danger px-4">For Rent</button>
+        <a href="#"class="btn btn-light px-4 py-2 mt-2">See Details</a>
+      </div>
+    </div>
+      
+      
+    
+    <div class="carousel-item">
+      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.YI9uNLp7jkJQF12UXBP4DAHaFj%3Fcb%3D12%26pid%3DApi&f=1&ipt=5694501c99bfb71351073b7bdf647a76e970ee278473a47cb651423dd65e853a&ipo=images img-fluid" class="d-block w-100" alt="house">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+  <!----seacrh section-->
+  <section class="search-section py-4 bg-primary text-white">
+    <div class="conatiner">
+        <form class="row g-3 align-items-center">
+            <!---property type-->
+            <div class="col-12 col-md-3">
+                <label for="listingtype"class="form-label text-white">listingtype</label>
+                <select id="listingType" class="form-select">
+                    <option selected>choose..</option>
+                    <option value="house">House</option>
+                    <option value="condo">condo</option>
+                </select>
+            </div>
+            <!------------------offer type-->
+            <div class="col-12 col-md-3">
+                <label for="offertype"class="form-label text-white">listing type</label>
+                <select id="offer-type" class="form-select">
+                <option selected>for Sale</option>
+                <option value="Rent">for Rent</option>
+                <option value="lease">lease</option>
+                </select>
+            </div>
+            <!-------city-->
+            <div class="col-12 col-md-3">
+                <label for="city"class="form-label text-white">select city</label>
+                <select id="city"class="form-select">
+                    <option selected="new york"></option>
+                    <option value="la">los angeles</option>
+                    <option value="boston">boston</option>
+                    <option value="Chicago">Chicago</option>
+                </select>
+             </div>
+             <!-------search button-->
+             <div class="col-12 col-md-2 d-grid">
+                <label class="invisible">seacrh</label>
+                <button type="submit" class="btn btn-success btn-lg">search</button>
+             </div>
+        </form>
+    </div>
+  </section>
+
+      
+       <style>
+        .property-thumbnail img{
+            width: 100%;
+         height:200px;
+         object-fit: cover;
+         display:block;
+        }
+        .property-entry{
+            border:1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow:0 4px 10px rgba(0,0,0,0.1);
+        
+            transition: transform 0.2s ease-in-out;
+            background-color: #fff;
+        }
+        .property-entry:hover{
+           transform: translateY(-5px);
+        }
+        .offer-type-wrap{
+    
+            top:10px;
+            left:10px;
+            display: flex;
+            gap: 5px;
+        }
+        .offer-type{
+            font-size:12px;
+            padding:3px 8px;
+            border-radius:5px;
+        
+            color:#fff;
+        }
+        .property-body{
+            padding:15px;
+        }
+        .property-title{
+            font-size: 18px;
+            margin-bottom:10px;
+        }
+        .property-title a{
+            text-decoration:none;
+            color:#333;
+
+        }
+        .propert-title a:hover{
+            color:#19324d;
+        }
+        .property-price{
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .property-specs-wrap{
+            list-style:none;
+            padding:0;
+            margin:0;
+            display:flex;
+            gap:15px;
+            flex-wrap:wrap;
+        }
+        .property-specs-number{
+            font-weight:bold;
+        
+        }
+        .search-section{
+            border-radius:12px;
+
+        }
+        .form-select,.btn{
+            border-radius:8px;
+            box-shadow:02px 6px rgba(0,0,0,0.1);
+        }
+        .form-label{
+            font-weight:600;
+            font-size:0.9rem;
+        }
+        .team-img-wrapper img{
+          width: 100%;
+          height: 250px;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+       </style>
+     <!----cards row-->
+<div class="container ">
+    <div class="row g-4">
+         <!---card-1-->
+       <div class="col-md-4 ">
+        <div class="property-entry h-100 ">
+            <!--thumbnail image-->
+            <a href="property-details.html" class="property-thumbnail d-block position-relative">
+           
+                      <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.3yyByKdhhCCCXzLh6HBSygHaE8%3Fcb%3D12%26pid%3DApi&f=1&ipt=de4929568dfe61b86193c4fc6bd0696e175f42efe3bac9a96f3e4c33965c35df&ipo=images" class="card-img-top img-fluid" alt="image">
+                      <!-----offer tags-->
+
+            
+            
+                       <div class="offer-type-wrap position-absolute ">
+                <span class="offer-type bg-danger">Sale</span>
+                <span class="offer-type bg-success">Rent</span>
+                       </div>
+            </a>
+            <!----------body------------->
+        <div class=" p-4 property-body">
+            <a href="#"class="property-favourite float-end"><span class="icon-heart-o"></span></a>
+            <h2 class="property-title"><a href="property-details.html">763 c bulkjeb</a></h2>
+            <span class="property-location d-block mb-3"></span>
+            <span class="property-icon icon-room"></span>los angeles CA </span>
+
+
+            <strong class="property-price text-primary mb-3 d-block text-succcess">$2,265,500</strong>
+            <!---specs-->
+            <ul class="property-specs-wrap mb-3 mb-lg-0 list-unstyled d-flex gap-3">
+                <li><span class="property-specs">beds:</span></li>
+                <li><span class="property-specs-number">2</span></li>
+            <li><span class="property-specs">baths:</span></li>
+            <li><span class="property-specs-number">2</span></li>
+            <li><span class="property-specs">SQ FT</span></li>
+            <li><span class="property-specs-number">7,000</span></li>
+            </ul>
+        </div>
+             </div>
+               </div>
+     
+            
+             <!--card-2-->
+ 
+ <div class=" col-md-4">
+  <div class="property-entry h-100">
+    <!---thumbnail image-->
+    <a href="property-details.html" class="property-thumbnail d-block position-relative">
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.MyS3AOeDU_g-DNwtOYvwWAHaFj%3Fcb%3D12%26pid%3DApi&f=1&ipt=75b2b98c205de427f0f27659606e96f1c2f0347ec50a7cc0c97ee5ef18135f3a&ipo=images" class="card-img-top img-fluid" alt="image">
+  <!----offer tags-->
+  <div class="offer-type-wrap position-absolute">
+    <span class="offer-type bg-danger">Sale</span>
+    <span class="offer-type bg-success">Rent</span>
+  </div>
+    </a>
+    <!-----body-->
+  <div class="p-4 property-body">
+    <a href="#" class="property-favourite float-end"><span class="icon-heart-o"></span></a>
+    <h2 class="property-title"><a href="property-details.html">234 D.suburbs</a></h2>
+    <span class="property-location d-block mb-3"></span>
+    <span class="property-icon icon-room"></span>Carlifornia wodland</span>
+    <strong class="property-price text-primary mb-3 d-block text-success">$1198,400
+    </strong>
+    <!--specs-->
+    
+  <ul class="property-specs-wrap mb-3 mb-lg-0">
+    <li><span class="property-specs">beds:</span></li> 
+    <li><span class="property-specs-number">3:</span></li>
+    <li><span class="property-specs">baths:</span></li>
+    <li><span class="property-specs-number">3:</span></li>
+    <li><span class="property-specs">SQ FT</span></li>
+    <li><span class="property-specs-number">7,000</span></li>
+     
+  </ul>
+  
+  </div>
+       </div>
+ </div>
+                  <!--------------card-3----------->
+<div class="col-md-4">
+<div class="property-entry h-100">
+    <!--thumbnail image-->
+    <a href="property-details.html" class="property-thumbnail d-block position-relative">
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.xyw6ZmbIdc0JHj8cSAJ7EgHaE8%3Fcb%3D12%26pid%3DApi&f=1&ipt=626551de10a5d75fa7a50c690e1053c440fc32022cee2efa81da513f7557d693&ipo=images" class="card-image-top img-fluid" alt="image">
+  <!---offer tags-->
+   <div class="offer-type-wrap position-absolute">
+    <span class="offer-type bg-danger">Sale</span>
+    <span class="offer-type bg-success">Rent</span>
+  </div>
+    </a>
+    <!--body-->
+    <div class="p-4 property-body">
+        <a href="#" class="property-favourite float-end"><span class="icon-heart-o"></span></a>
+    <h2 class="property-title"><a href="property-details.html">465 C.boston</a></h2>
+    <span class="property-location d-block mb-3"></span>
+    <span class="property-icon icon-room"></span>boston kkk10</span>
+    <strong class="property-price text-primary mb-3 d-block text-success">$2,98,400
+    </strong>
+    <!---specs-->
+  <ul class="property-specs-wrap mb-3 mb-lg-0">
+    <li><span class="property-specs">bed:</span></li> 
+    <li><span class="property-specs-number">4+:</li> 
+        <li><span class="property-specs">baths:</span></li>
+        <li><span class="property-specs-number">4+</span></li>
+    <li><span class="SQ FT">70,000</span></li>
+  </ul>
+  
+  </div>
+        </div>
+</div>
+                    <!-------card-4------------>
+
+      <div class=" col-md-4">
+     <div class="property-entry h-100">
+        <!----thumbnail image-->
+        <a href="property-details.html" class="property-thumbnail d-block position-relative">
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.-fEj9itvhQoZSOzc1zaWWAHaE8%3Fcb%3D12%26pid%3DApi&f=1&ipt=e8ca3a873936326f9d56b30e062641bd2b3d0d8a0a8029ec74758d971f413f6a&ipo=images" class="card-img-top img-fluid" alt="image">
+     <!---offer tags-->
+     <div class="offer-type-wrap position-absolute">
+        <span class="offer-type bg-danger">Sale</span>
+        <span class="offer-type bg-success">Rent</span>
+     </div>
+        </a>
+        <!----body-->
+  <div class="p-4 property-body">
+    <a href="#" class="property-favourite float-end"><span class="icon-heart-o"></span></a>
+    <h2 class="property-title"><a href="property-details.html">465 C.boston</a></h2>
+    <span class="property-location d-block mb-3"></span>
+    <span class="property-icon icon-room"></span>boston kkk10</span>
+    <strong class="property-price text-primary mb-3 d-block text-success">$2,98,400
+    </strong>
+    <!----------specs------>
+  <ul class="property-specs-wrap mb-3 mb-lg-0">
+    <li><span class="property-specs">beds:</span></li>
+    <li><span class=" property-specs-number">2</span></li>
+    <li><span class="property-specs">baths:</span></li>
+    <li><span class="property-specs-number">2</span></li>
+    <li><span class="property-specs">SQ FT:</span></li>
+    <li><span class="property-specs-number">5,5000</span></li>
+  </ul>
+  </div>
+  </div>
+    </div>
+                    <!----card  5-->
+                    <div class="col-md-4">
+
+   <div class="property-entry h-100">
+    <!---thumbnail-->
+    <a href="property-details.html"class="property-thumbnail d-block position-relative">
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.OHBU0BXiTI-q4B36Zd7rCQHaEK%3Fcb%3D12%26pid%3DApi&f=1&ipt=ff04e42378a5d662fc16b7582ffcba497aff1f4505ed6fa92cd9a07afd1034c7&ipo=images" class="card-img-top img-fluid" alt="image">
+  <!--offer tags-->
+  <div class="offer-type-wrap position-absolute">
+    <span class="offer-type bg-danger">Sale</span>
+    <span class="offer-type bg-success">Rent</span>
+  </div>
+    </a>
+    <!------------body---------------->
+  <div class="p-4 property-body">
+    <a href="#" class="property-favourite float-end"><span class="icon-heart-o"></span></a>
+    <h2 class="property-title"><a href="property-details.html">333 connecticut newyork</a></h2>
+    <span class="property-location d-block mb-3"></span>
+    <span class="property-icon icon-room">street 22 newyork</span>
+    <strong class="property-price text-primary mb-3 d-block text-success">$345,400</strong>
+    <!-----specs-->
+  
+  <ul class="property-specs-wrap mb-3 mb-lg-0">
+    <li><span class="property-specs">beds:</span></li>
+    <li><span class="property-specs-number">2:</span></li>
+    <li><span class="property-specs">baths:</span></li>
+    <li><span class="property-specs-number">2:</span></li>
+    <li><span class="property-specs">SQ FT</span></li>
+    <li><span class="property-specs-number">2000</span></li>
+  </ul>
+  </div>
+  </div>
+   </div>
+   <!-------------Card 6---------------->
+   <div class="col-md-4">
+   <div class="property-entry h-100">
+    <!--thumb nail with image-->
+    <a href="property-details.html" class="property-thumbnail d-block position-relative">
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.YI9uNLp7jkJQF12UXBP4DAHaFj%3Fcb%3D12%26pid%3DApi&f=1&ipt=5694501c99bfb71351073b7bdf647a76e970ee278473a47cb651423dd65e853a&ipo=images" class="card-img-top img-fluid" alt="image">
+  <!-----offer tags------>
+  <div class="offer-type-wrap position-absolute">
+    <span class="offer-type bg-danger">Sale</span>
+    <span class="offer-type bg-success">Rent</span>
+  </div>
+    </a>
+    <!--------body--------->
+    <div class="p-4 property-body">
+        <a href="#" class="property-favourite float-end"><span class="icon-heart-o"></span></a>
+    <h2 class="property-title"><a href="property-details.html"></a> carlifornia woodland</h2>
+    <span class="property-location d-block mb-3"></span>
+    <span class="property-icon icon-room">section C street 2</span>
+    <strong class="property-price text-primary mb-3 d-block text-success">$65,760</strong>
+    <!--------------------------specs----------->
+
+    
+  <ul class="property-specs-wrap mb-3 mb-lg-0">
+    <li><span class="property-specs">beds:</span></li> 
+    <li><span class="property-specs-number"></span>2:</li>
+    <li><span class="property-specs">baths</span></li>
+    <li><span class="property-specs-number">2</span></li>
+  <li><span class="property-specs">SQ FT</span></li>
+  <li><span class="property-specs-number">$34,540</span></li>
+</ul>
+  
+          </div>
+          </div>
+  </div>
+  <!------card 7-->
+   <div class="col-md-4">
+   <div class="property-entry h-100">
+    <!------------------------------------------------------thumbnail with image------------------------------->
+    <a href="property-details.html" class="property-thumbnail d-block position-relative">
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.6-4_spOI04Eq06CoMxv7qwHaHa%3Fcb%3D12%26pid%3DApi&f=1&ipt=902d59f8d0afe7d97fc0e0c171ee2e133a30189b411c7024d17d36b86b1d2d03&ipo=images" class="card-img-top img-fluid" alt="image">
+  <!--------------------------------------offer tags--------------------------------->
+  <div class="offer-type-wrap position-absolute">
+    <span class="offer-type bg-danger">Sale</span>
+    <span class="offer-type bg-success">Rent</span>
+  </div>
+    </a>
+    <!----------------------------------------------body------------------------------------------------->
+    <div class="p-4 property-body">
+        <a href="#" class="property-favourite float-end"><span class="icon-heart-o"></span></a>
+    <h2 class="property-title"><a href="property-details.html"></a> boston</h2>
+    <span class="property-location d-block mb-3"></span>
+    <span class="property-icon icon-room">Sreet 10</span>
+    <strong class="property-price text-primary mb-3 d-block text-success">$65,760</strong>
+    <!--------------------------specs----------->
+
+    
+  <ul class="property-specs-wrap mb-3 mb-lg-0">
+    <li><span class="property-specs">beds:</span></li> 
+    <li><span class="property-specs-number"></span>2:</li>
+    <li><span class="property-specs">baths</span></li>
+    <li><span class="property-specs-number">2</span></li>
+    <li><span class="propery-specs"> SQ FT</span></li>
+    <li><span class="property-specs-number">34,000</span></li>
+    </ul>
+ </div>
+    </div>
+   </div>
+   <!-----------card 8-->
+    <div class="col-md-4">
+   <div class="property-entry h-100">
+    <!--thumb nail with image-->
+    <a href="property-details.html" class="property-thumbnail d-block position-relative">
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.tmfEPIhG6bFIlNlxdN1yiQHaEK%3Fcb%3D12%26pid%3DApi&f=1&ipt=8ac53a934bd413e4be207f254968395ab7be55a0f213ccdcd2a4e4415fcfb926&ipo=images" class="card-img-top img-fluid" alt="image">
+  <!-----offer tags------>
+  <div class="offer-type-wrap position-absolute">
+    <span class="offer-type bg-danger">Sale</span>
+    <span class="offer-type bg-success">Rent</span>
+  </div>
+    </a>
+    <!--------body--------->
+    <div class="p-4 property-body">
+        <a href="#" class="property-favourite float-end"><span class="icon-heart-o"></span></a>
+    <h2 class="property-title"><a href="property-details.html"></a> florida</h2>
+    <span class="property-location d-block mb-3"></span>
+    <span class="property-icon icon-room">street 11 section B
+    </span>
+    <strong class="property-price text-primary mb-3 d-block text-success">$65,760</strong>
+    <!--------------------------specs----------->
+
+    
+  <ul class="property-specs-wrap mb-3 mb-lg-0">
+    <li><span class="property-specs">beds:</span></li> 
+    <li><span class="property-specs-number"></span>2:</li>
+    <li><span class="property-specs">baths</span></li>
+    <li><span class="property-specs-number">2</span></li>
+    <li><span class="property-specs">SQ FT</span></li>
+    <li><span class="property-specs-number">3,400</span></li>
+    </ul>
+    </div>
+   </div>
+    </div>
+    <!--------------------------card 9-------------------------------------------------->
+     <div class="col-md-4">
+   <div class="property-entry h-100">
+    <!--thumb nail with image-->
+    <a href="property-details.html" class="property-thumbnail d-block position-relative">
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.0G8jTMCPXnBT1ghE4atVrAHaEK%3Fcb%3D12%26pid%3DApi&f=1&ipt=a0960383da33134cd6c96582f06da99baf35215e73495f6f7eacd14c6a2eb42c&ipo=images" class="card-img-top img-fluid" alt="image">
+  <!-----offer tags------>
+  <div class="offer-type-wrap position-absolute">
+    <span class="offer-type bg-danger">Sale</span>
+    <span class="offer-type bg-success">Rent</span>
+  </div>
+    </a>
+    <!--------body--------->
+    <div class="p-4 property-body">
+        <a href="#" class="property-favourite float-end"><span class="icon-heart-o"></span></a>
+    <h2 class="property-title"><a href="property-details.html"></a> Hratford</h2>
+    <span class="property-location d-block mb-3"></span>
+    <span class="property-icon icon-room">street 10 connecticut</span>
+    <strong class="property-price text-primary mb-3 d-block text-success">$65,760</strong>
+    <!--------------------------specs----------->
+
+    
+  <ul class="property-specs-wrap mb-3 mb-lg-0">
+
+    <li><span class="property-specs">beds:</span></li> 
+    <li><span class="property-specs-number"></span>2:</li>
+    <li><span class="property-specs">baths</span></li>
+    <li><span class="property-specs-number">2</span></li>
+    <li><span class="property-specs">SQ FT</span></li>
+    <li><span class="property-specs-number">20,000</span></li>
+  </ul>
+    </div>
+   </div>
+     </div>
+    </div>
+</div>
+                           <!------------------------------------------------------->
+
+    <section class="bg-light">
+        <div class="container py-5">
+           <div class="text-center mb-5">
+            
+                    
+                        <h2 class="fw-bold">Why Choose Us?</h2>
+            
+                    <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, quod.</p>
+           </div>
+                    <!--features-->
+                <div class="row g-4 text-center">
+        <!----feature 1-->
+        <div class="col-md-4">
+            <i class="bi bi-building fs-1 text-primary"></i>
+            <h5 class="mt-3">Research Suburbs</h5>
+            <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                 Consectetur quo id necessitatibus deserunt beatae veniam?</p>
+                 <a href="#"class="text-decoration-none">Read More</a>
+        </div>
+        <!-------feature 2-------->
+                <div class="col-md-4">
+                    <i class="bi bi-house-check fs-1 text-primary"></i>
+                    <h5 class="mt-3">Sold Houses</h5>
+                    <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur
+                         adipisicing elit. Magnam, adipisci.</p>
+                         <a href="#"class="text-decoration-none">Read More</a>
+                </div>
+                <!----------------------feature 3-------------------------->
+                <div class="col-md-4">
+                    <i class="bi bi-shield-lock fs-1 text-primary"></i>
+                    <h5 class="mt-3">Security Priority</h5>
+                    <p class="lead-text-muted">Lorem ipsum dolor sit amet consectetur adipisicing
+                         elit. Alias minus reprehenderit officiis quisquam reiciendis!</p>
+                    <a href="#" class="text-decoration-none">Read More</a>
+                </div>
+                    
+              
+                </div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <!-----------------------------blog---------------------------->
+    <section class="blog-section py-4 bg-white" id="our blog">
+        <div class="container">
+            <div class="row-align-items-center g-4">
+                <!---------section heading-->
+                <div class="row justify-content-center mb-4">
+                    <div class="col-12 col-md-10 text-center">
+                        <h2 class="mb-3">Recent blog</h2>
+                        <p class="lead-text-muted">Lorem ipsum dolor sit, amet 
+                            consectetur adipisicing elit. Minima ratione nihil nisi 
+                            veniam dolorem nostrum, vel obcaecati repudiandae a neque!</p>
+                                <!----cards row-->
+<div class="container">
+    <div class="row g-4">
+        <!------------card 1------------------->
+        <div class="col-md-4">
+     <div class="card" style="width: 18rem;">
+    
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.vvUEO-U_tP5lhTQ2CfdoPQHaE9%3Fpid%3DApi&f=1&ipt=57f0d9154c8d313996b44680036c607c4f1bfba2b5bba565482412780005b136&ipo=images" class="card-img-top img-fluid" alt="home">
+  <div class="card-body">
+    <h5 class="card-title">art gossip by mike charles</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing
+         elit. Nobis repellat impedit autem cupiditate necessitatibus repellendus 
+         aspernatur hic illo facilis! Repudiandae.</p>
+  </div>
+</div>
+        </div>   
+        <!--------------------card 2--> 
+        <div class="col-md-4">
+<div class="card " style="width: 18rem;">
+    
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.e7_C0c-cTnbOVGTTsXWkUQHaE8%3Fpid%3DApi&f=1&ipt=da51b16d921faba851eaa7722893e49368d2d917b599cdcc4035db6a078e14d9&ipo=images" class="card-img-top img-fluid" alt="home">
+  <div class="card-body">
+    <h5 class="card-title">art gossip by mike charles</h5>
+    <p class="card-text">Lorem ipsum, dolor sit amet consectetur
+         adipisicing elit. Doloribus sapiente nisi nesciunt omnis ducimus,
+          perferendis sint quidem quibusdam accusantium consequatur?</p>
+  </div>
+</div>
+        </div>
+        <!---------------------card 3-->
+        <div class="col-md-4">
+<div class="card " style="width: 18rem;">
+
+  <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%2Fid%2FOIP.wEBhPELMMZ1_gMFdaSgPGAHaE7%3Fpid%3DApi&f=1&ipt=ce30bcc08325b693fea7d5f58dab06565c7f91bd0f7e0ee29fc7fee9fc673be2&ipo=images" class="card-img-top img-fluid" alt="home">
+  <div class="card-body">
+    <h5 class="card-title">art gossip by mike charles</h5>
+    <p class="card-text">Lorem ipsum dolor sit amet consectetur 
+        adipisicing elit. Impedit consequatur ea facere perspiciatis quis repudiandae 
+        laboriosam eaque doloremque temporibus odit!</p>
+  </div>
+</div>
+        </div>
+    </div>               
+    </div>    
+              </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        
+    </section>
+    <!----------------------------------------------------------------------------->
+    <section class="our agents-section py-4 bg-light" id="our agents">
+      <div class="container">
+        <div class="row-align-items-center">
+          <!-------------------section heading-->
+          <div class="row justify-content-center mb-4">
+            <div class="col-12 col-md-10 text-center">
+              <h2 class="mb-3">Our Agents</h2>
+              <p class="lead-text-muted">Lorem ipsum dolor si
+                 amet consectetur adipisicing elit. Reprehenderit, aliquid et. Eos, voluptates velit? Sed.</p>
+                 <!-------------------------------cards row-->
+                 <div class="container my-5">
+                  <div class="row g-4">
+                    <!-------------------------------------card 1---------------------->
+                    <div class="  col-md-4 ">
+                      <div class="team-member">
+                      <div class="card text-center border-0  shadow-sm" style="width: 18rem;">
+                        <div class="team-img-wrapper p-3">
+                          <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%2Fid%2FOIP.81ADDUr39gM6gCj3jPuN7gHaJL%3Fcb%3D12%26pid%3DApi&f=1&ipt=7fe144e30eb8b052ba85829eb28d314fb13d7a5b1b5701babab889b703a0d5fc&ipo=images" class="card-image-top img-fluid rounded">
+                        
+                      <div class="card-body">
+                        <h2 class=" card-title mb-2 font-weight-light text-black h4"> Megan Smith</h2>
+                        <span class=" d-block mb-3 text-muted">Real estate Agent</p>
+                        <p>Lorem ipsum dolor, 
+                          sit amet consectetur adipisicing elit. Omnis, 
+                          fuga ducimus possimus voluptatem nostrum incidunt enim consequuntur rem.</p>
+                           <div class="social-icons mt-3">
+                            <a href="#" class="text-primary ">
+                              <i class="bi bi-twitter "></i>
+                            </a>
+                            <a href  class="text-blue">
+                              <i class="bi bi-facebook "></i>
+                            </a>
+                            <a href class="text-blue">
+                              <i class="bi bi-linkedin "></i>
+                            </a>
+                          </div>
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+                    </div>
+
+                      <div class="col-md-4">
+                        <div class="team-member">
+                          <div class="card border-0 text-center shadow-sm" style="width: 18rem;">
+                            <div class="team-img-wrapper p-3">
+                              <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%2Fid%2FOIP.a_yY7Fr14f98_ruxC2rLtQHaJX%3Fcb%3D12%26pid%3DApi&f=1&ipt=2058aa9c15f732a68a81909ccee7ba6c50e57877248f0f3b8918ba687a344516&ipo=images"class="card-image-top img-fluid rounded">
+                              <div class="card-body">
+                                <h2 class=" card-title mb-2 font-weight-light text-black h4">Brooke Cagle</h2>
+                                <span class="d-block mb-3 text-muted">real estate agent</span>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis temporibus quia officiis molestias beatae autem?</p>
+                                <div class="social-icons mt-3">
+                                  <a href="#" class="text-primary ">
+                                    <i class= "bi bi-twitter "></i>
+                                  </a>
+                                  <a href="#"class="text-primary ">
+                                    <i class="bi bi-facebook " ></i>
+                                  </a>
+                                  <a href="#" class="text-primary ">
+                                    <i class="bi bi-linkedin "></i>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                            <div class="col-md-4">
+                              <div class="card">
+                                <div class="card border-0 text-center shadow-sm" style="width:18rem;">
+                                  <div class="team-img-wrapper p-3">
+                                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%2Fid%2FOIP.DMz0KidAhvuP68BZQIaG7AHaHE%3Fcb%3D12%26pid%3DApi&f=1&ipt=bcbd9ce8dfbdf4fe8c20640701698e9ff81745602aedbba2fa68e09862fab9d2&ipo=images" class="card-img-top img-fluid rounded">
+                                    <div class="card-body">
+                                      <h2 class=" card-title mb-2 font-weight-light text-black h4">Philip martin</h2>
+                                      <span class="d-block mb-3 text-white-opacity-05">Real Estate Agent</span>
+                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, accusantium facere. Optio tempore est accusantium sapiente?</p>
+                                      <div class="social-icons mt-3">
+                                        <a href="#" class="text-primary">
+                                          <i class="bi bi-facebook"></i>
+                                        </a>
+                                        <a href="#" class="text-primary">
+                                          <i  class="bi bi-twitter"></i>
+                                        </a>
+                                        <a href="#" class="text-primary">
+                                          <i class="b bi-linkedin"></i>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                </div>
+                            </div>
+                              
+                           
+              
+                  </div>
+                 </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </section>
+    <footer class="bg-dark text-light pt-5 pb-3 mt-5">
+      <div class="container">
+        <div class="row">
+          <!-------about-->
+          <div class="col-lg-4 col-md-6">
+            <h5 class="fw-bold">Homeland</h5>
+            <p class="small">Find your dream house</p>
+          </div>
+          <!----------------quick links-->
+          <div class="col-md-3 md-4">
+            <h6 class="text-uppercase">Quick links</h6>
+            <ul class="list-unstyled ">
+              <li><a href="#" class="text-light text-decoration-none">Home</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Buy</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Rent</a></li>
+              <li><a href="#" class="text-light text-decoration-none">Properties</a></li>
+              <li><a href="#" class="text-light ext-decoration-none">Blog</a></li>
+            </ul>
+          </div>
+          <!-----------------------conatct info-->
+          <div class="col-lg-3 col-md-6">
+            <h6 class="fw-bold">Contact US</h6>
+            <ul class="list-unstyled small">
+              <li><i class="bi bi-envelope"></i>homeland@gmail.com</li>
+              <li><i class="bi bi-telephone"></i>112 222 3333</li>
+              <li><i class="bi bi-geo"></i>Islamabad pakistan</li>
+            </ul>
+          </div>
+          <!-----------------------socials-->
+          <div class="col-lg-3 col-md-6">
+            <h6 class="fw-bold">follow us</h6>
+            <a href="# "class="text-light me-3"> <i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+          </div>
+<!--------------------------------divider-------------------------------->
+<hr class="border-light my-4">
+<!-----------------------------------------------------copy right------------->
+<div class="text-center small">&copy;2025 homeland. All Rights Reserved</div>
+        </div>
+      </div>
+    </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+    </body>
+</html>
